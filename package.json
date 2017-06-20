@@ -1,0 +1,38 @@
+{
+  "name": "CommonGround",
+  "version": "1.0.0",
+  "description": "a Web app for users to purchase coffee.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stevenlee731/CommonGround.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stevenlee731/CommonGround/issues"
+  },
+  "homepage": "https://github.com/Stevenlee731/CommonGround#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "eslint": "3.16.1",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-promise": "3.4.2",
+    "eslint-plugin-react": "6.10.0",
+    "eslint-plugin-standard": "2.0.1",
+    "htmlhint": "0.9.13",
+    "husky": "0.13.1",
+    "npm-run-all": "4.0.2",
+    "stylelint": "7.9.0",
+    "stylelint-config-standard": "16.0.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4"
+  }
+}

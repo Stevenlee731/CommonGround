@@ -130,6 +130,11 @@ hr {
   color: white;
 }
 
+.price {
+  padding: 8px 25px;
+  margin: 0 !important;
+}
+
 .white {
   background-color: white;
   border-color: grey;
@@ -161,10 +166,6 @@ hr {
 }
 
 /* what we do */
-#mission {
-
-}
-
 .section-mission {
   padding: 3rem 4rem;
 }
@@ -191,19 +192,6 @@ hr {
 }
 
 /* our common friends */
-
-/*.friend-square {
-  width: 100%;
-  height: 364px;
-  display: inline-block;
-}
-
-.friend-rectangle {
-  display: inline-block;
-  width: 100%;
-  height: 590px;
-}*/
-
 .section-friends {
   padding-bottom: 4rem;
 }
@@ -324,6 +312,11 @@ a > i {
 /* details */
 .section-details {
   padding: 3rem 4rem;
+  border-top: 1px solid lightgrey;
+}
+
+.section-product {
+  padding: 3rem 4rem;
 }
 
 .border-left {
@@ -334,7 +327,40 @@ a > i {
 }
 
 .pricing {
+  padding: 4rem 0;
   width: 100%;
   background-color: black;
   color: white;
+  margin-bottom: 10%;
+}
+
+/* checkout */
+.section-checkout {
+  padding: 3rem 4rem;
+  border-top: 1px solid lightgrey;
+}
+
+.checkout-form {
+  width: 70%;
+}
+
+.checkout-column {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.checkout-boxes {
+  height: 50px !important;
+}
+
+.checkout-border {
+  border: 1px solid #d3d3d3;
+}
+
+#method {
+  margin-bottom: 10rem;
+}
+
+.form-box {
+  background-color: #FCFCFC;
 }

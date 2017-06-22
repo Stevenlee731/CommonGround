@@ -1,12 +1,13 @@
-const $viewList = ["#home", "#product", "#checkout"]
-const $shippingViews = ["#info", "method", "payment"]
+const $viewList = ["#home", "#product", "#info", "#method", "#payment", "#confirmation"]
 
+const $mainNav = document.querySelector('#main-nav')
 const $homeButton = document.querySelector('#home-button')
 const $aboutButton = document.querySelector('#about-button')
 const $productButton = document.querySelector('#product-button')
 const $checkoutButton = document.querySelector('#checkout-button')
-
-const $uploadButton = document.querySelector('#upload-button')
+const $infoButton = document.querySelector('#info-button')
+const $methodButton = document.querySelector('#method-button')
+const $completeButton = document.querySelector('#complete-button')
 var $shoppingCart = {}
 
 
@@ -32,16 +33,41 @@ $productButton.addEventListener('click', event => {
 })
 
 $checkoutButton.addEventListener('click', event => {
-  changeView('#checkout', $viewList)
+  changeView('#info', $viewList)
 })
 
 $homeButton.addEventListener('click', event => {
   changeView('#home', $viewList)
 })
 
+$infoButton.addEventListener('click', event => {
+  changeView('#method', $viewList)
+})
+
+$infoButton.addEventListener('click', event => {
+  changeView('#method', $viewList)
+})
+
+$methodButton.addEventListener('click', event => {
+  changeView('#payment', $viewList)
+})
+
+$completeButton.addEventListener('click', event => {
+  changeView('#confirmation', $viewList)
+})
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+})
+
+window.addEventListener('scroll', () => {
+  const $navbar = document.querySelector('#main-nav')
+  if (document.body.scrollTop > 600) {
+    $navbar.classList.add('fixed-top')
+  }
+  if (document.body.scrollTop < 600) {
+    $navbar.classList.remove('fixed-top')
+  }
 })
 
 })

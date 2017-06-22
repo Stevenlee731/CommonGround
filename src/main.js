@@ -7,10 +7,9 @@ const $productButton = document.querySelector('#product-button')
 const $checkoutButton = document.querySelector('#checkout-button')
 const $infoButton = document.querySelector('#info-button')
 const $methodButton = document.querySelector('#method-button')
+const $drinkButton = document.querySelector('#drink-button')
 const $completeButton = document.querySelector('#complete-button')
 var $shoppingCart = {}
-
-
 
 const changeView = (activeView, viewList) => {
   const $activeView = document.querySelector(activeView)
@@ -44,16 +43,16 @@ $infoButton.addEventListener('click', event => {
   changeView('#method', $viewList)
 })
 
-$infoButton.addEventListener('click', event => {
-  changeView('#method', $viewList)
-})
-
 $methodButton.addEventListener('click', event => {
   changeView('#payment', $viewList)
 })
 
 $completeButton.addEventListener('click', event => {
   changeView('#confirmation', $viewList)
+})
+
+$drinkButton.addEventListener('click', event => {
+  changeView('#info', $viewList)
 })
 
 $(function () {

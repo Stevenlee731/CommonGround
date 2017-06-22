@@ -22,8 +22,6 @@
     "eslint": "3.16.1",
     "eslint-config-standard": "6.2.1",
     "eslint-plugin-promise": "3.4.2",
-    "eslint-plugin-react": "6.10.0",
-    "eslint-plugin-standard": "2.0.1",
     "htmlhint": "0.9.13",
     "husky": "0.13.1",
     "npm-run-all": "4.0.2",

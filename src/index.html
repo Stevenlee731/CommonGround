@@ -2,16 +2,362 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.js"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="styles.css"/>
   <title>Common Grounds</title>
 </head>
 <body>
-  <div>hello world!</div>
+  <nav class="navbar navbar-light navbar-toggleable-sm" id="main-nav">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a id="home-button" href="#" class="navbar-brand d-flex w-50 mr-auto"><h4><strong>common grounds.</strong></h4></a>
+      <div class="navbar-collapse collapse" id="collapsingNavbar3">
+
+          <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+              <li class="nav-item">
+                  <a id="about-button" class="nav-link main-nav" href="#">about us</a>
+              </li>
+              <li class="nav-item">
+                  <a id="product-button" class="nav-link main-nav" href="#">product</a>
+              </li>
+              <li class="nav-item">
+                  <a id="checkout-button" class="nav-link main-nav" href="#">checkout</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <div id="home" class="hide">
+    <section id="cover">
+      <div class="jumbotron d-flex align-items-center">
+
+        <div class="container col-xs-12">
+          <h1 class="motto">we are common.</h1>
+          <hr/>
+          <p class="lead">professionals <br/> in the coffee world</p>
+          <a href="#touch"><button type="button" class="btn btn-md round black">get in touch</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission">
+      <div class="section-mission">
+        <div class="container">
+          <h1 class="heading">what we do?</h1>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-6 square">
+              <img class="img-fluid" src="./img/coffee-roasters.jpg" alt="coffee roasters"/>
+            </div>
+            <div class="col-xs-12 col-md-6 text-left copy-right">
+              <h5>creative</h5>
+              <h2><strong>roasters</strong></h2>
+              <hr class="left-hr"/>
+              <p>Nihil hic munitissimus habendi senatus locus, nihil horum? Me non paenitet nullum festiviorem excogitasse ad hoc. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Tu quoque, Brute, fili mi, nihil timor populi, nihil!
+                Hi omnes lingua, institutis, legibus inter se differunt.</p>
+                <p>Quisque ut dolor gravida, placerat libero vel, euismod. Plura mihi bona sunt, inclinet, amari petere vellent.</p>
+                <a href="#contact"><button type="button" class="btn btn-md round white">learn more</button></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6 text-left copy-left">
+                <h5>our</h5>
+                <h2><strong>roasts</strong></h2>
+                <hr class="left-hr"/>
+                <p>Nihil hic munitissimus habendi senatus locus, nihil horum? Me non paenitet nullum festiviorem excogitasse ad hoc. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Tu quoque, Brute, fili mi, nihil timor populi, nihil!
+                  Hi omnes lingua, institutis, legibus inter se differunt.</p>
+                  <p>Quisque ut dolor gravida, placerat libero vel, euismod. Plura mihi bona sunt, inclinet, amari petere vellent.</p>
+                  <a href="#contact"><button type="button" class="btn btn-md round white">learn more</button></a>
+                </div>
+                <div class="col-xs-12 col-md-6 square">
+                  <img class="img-fluid" src="./img/coffee-roasters.jpg" alt="coffee roasters"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="friends">
+          <div class="section-friends">
+            <div class="container">
+              <h1 class="heading"><strong>our common friends</strong></h1>
+              <div class="card-columns friend-grid">
+                <div class="card">
+                  <img class="card-img img-fluid friend-square" src="./img/common-friend-square.jpg" alt="Card image"/>
+                </div>
+                <div class="card">
+                  <img class="card-img img-fluid friend-rectangle" src="./img/common-friend-rectangle.jpg" alt="Card image"/>
+                </div>
+                <div class="card">
+                  <img class="card-img img-fluid friend-rectangle" src="./img/common-friend-rectangle2.jpg" alt="Card image"/>
+                </div>
+                <div class="card">
+                  <img class="card-img img-fluid friend-square" src="./img/common-friend-square2.jpg" alt="Card image"/>
+                </div>
+                <div class="card">
+                  <img class="card-img img-fluid friend-square" src="./img/common-friend-square3.jpg" alt="Card image"/>
+                </div>
+                <div class="card">
+                  <img class="card-img img-fluid friend-rectangle" src="./img/common-friend-rectangle3.jpg" alt="Card image"/>
+                </div>
+              </div>
+              <div class="row center">
+                <a href="#contact"><button type="button" class="btn btn-md round black">learn more</button></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="team">
+          <div class="section-team">
+            <div class="container">
+              <h1 class="heading"><strong>our team</strong></h1>
+              <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                  <div class="row">
+                    <div class="col-4 team">
+                      <img class="profile" src="./img/32.jpg" alt="jon cusick"/>
+                      <h3><strong>jon cusick</strong></h3>
+                      <hr class="profile-hr" />
+                      <p>art director</p>
+                    </div>
+                    <div class="col-4 team">
+                      <img class="profile" src="./img/2.jpg" alt="judy chung"/>
+                      <h3><strong>judy chung</strong></h3>
+                      <hr class="profile-hr" />
+                      <p>founder</p>
+                    </div>
+                    <div class="col-4 team">
+                      <img class="profile" src="./img/88.jpg" alt="andrew kim"/>
+                      <h3><strong>andrew kim</strong></h3>
+                      <hr class="profile-hr" />
+                      <p>artist. designer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
+        <section id="testimonials">
+          <div class="section-testimonial">
+            <div class="container">
+              <h1 class="heading"><strong>commoners say</strong></h1>
+
+              <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                  <div class="row">
+                    <div style="padding-right:70px;" class="col-6 text-right">
+                      <h2><strong>frank sims</strong></h2>
+                      <hr class="right-hr"/>
+                      <p>photographer</p>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>Nihil hic munitissimus habendi senatus locus, nihil horum? Me non paenitet nullum festiviorem excogitasse ad hoc. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Tu quoque, Brute, fili mi, nihil timor populi, nihil!
+                        Hi omnes lingua, institutis, legibus inter se differunt.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="margin-top:30px;" class="row">
+                  <div class="col-sm-3">
+                    <img src="./img/customer1.jpg" alt="">
+                  </div>
+                  <div class="col-sm-3">
+                    <img src="./img/customer2.jpg" alt="">
+                  </div>
+                  <div class="col-sm-3">
+                    <img src="./img/customer3.png" alt="">
+                  </div>
+                  <div class="col-sm-3">
+                    <img src="./img/customer4.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="touch">
+            <div class="section-touch">
+              <div class="container">
+                <h2 class="heading">get in touch</h2>
+                <div class="row">
+                  <div class="col-sm-6 text-left">
+                    <div class="row contact-info">
+                      <div class="col-sm-1">
+                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-sm-11">
+                        <p>23 Mulholland Drive. suite 721. Los Angeles 10010 100S. Main Street Los Angeles 90012</p>
+                      </div>
+                    </div>
+                    <div class="row contact-info">
+                      <div class="col-sm-1">
+                        <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-sm-11">
+                        <p>+1-670-567-5590</p>
+                      </div>
+                    </div>
+                    <div class="row contact-info">
+                      <div class="col-sm-1">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-sm-11">
+                        <p>hello@commongrounds.com</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 social-media social-white">
+                        <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <form class="form-horizontal" role="form" method="post" action="index.php">
+                      <div class="form-group">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-12">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="e-mail" value="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-12">
+                          <textarea class="form-control" row="4" name="message" placeholder="your message"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-8 col-sm-offset-2">
+                          <input id="submit" name="submit" type="submit" value="submit" class="btn-md round white submit">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+<section id="product">
+  <div class="section-product">
+    <div class="container">
+      <h1 class="title">Christopher Columbus</h1>
+      <h1 class="bold title"><strong>ROAST</strong></h1>
+
+      <div id="coffeeCarousel" class="carousel slide" data-ride="carousel">
+        <div class="text-center carousel-controls">
+          <a style="padding-right: 1rem;" href="#coffeeCarousel" role="button" data-slide="prev">prev</a>
+          <a class="right" href="#coffeeCarousel" role="button" data-slide="next">next</a>
+        </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
+          </div>
+        </div>
+
+        <ol class="carousel-indicators">
+          <li data-target="#coffeeCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#coffeeCarousel" data-slide-to="1"></li>
+          <li data-target="#coffeeCarousel" data-slide-to="2"></li>
+          <li data-target="#coffeeCarousel" data-slide-to="3"></li>
+          <li data-target="#coffeeCarousel" data-slide-to="4"></li>
+        </ol>
+      </div>
+      <div class="section-details">
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <div class="row">
+              <div style="padding-right:70px;" class="col-6 text-left">
+                <hr class="border-left"/>
+                <h2><strong>this roast is<br/>for the go-getters,<br/> the adventurous,<br/> and not the<br/> average joe.</strong></h2>
+              </div>
+              <div class="col-6 text-left">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#tab-details" role="tab" data-toggle="tab">Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab-reddit" role="tab" data-toggle="tab">Reddit</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="tab-details">
+                    <p style="font-size: 12px;">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
+                    <p style="font-size: 12px;">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
+                    <p style="font-size: 12px;">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="tab-reddit">bbb</div>
+                </div>
+                <div class="row">
+                  <div style="padding-top: 40px;" class="col-sm-12 social-links">
+                    <a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                    <a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    <a data-toggle="tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                    <a data-toggle="tooltip" data-placement="bottom" title="Pinterest" href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center pricing">
+        <p>best price &#8212; <strong>$19 </strong><span>/ bag</span></p>
+        <a href="/checkout"><button type="" name="button" style="color:black">drink more</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="checkout">
+  <div id="info">
+
+  </div>
+  <div id="method">
+
+  </div>
+  <div id="payment">
+
+  </div>
+</div>
+
+
+
+    <footer class="footer text-center">
+      <h6>&copy;<strong>2016 commongrounds.</strong></h6>
+      <p>all rights reserved</p>
+    </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

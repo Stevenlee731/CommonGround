@@ -31,6 +31,7 @@
     "watchify": "^3.9.0"
   },
   "dependencies": {
+    "bootstrap-v4-dev": "^4.0.0-alpha.6",
     "express": "^4.15.3",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4"

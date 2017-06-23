@@ -542,6 +542,97 @@ a.nav-link {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .credit-card {
+    width: 30px;
+  }
+
+  .section-friends {
+    display: none;
+  }
+
+  .section-checkout {
+    padding: 3rem 1rem;
+  }
+
+  .checkout-form {
+    width: 100%;
+  }
+
+  .col-xs-12.text-left {
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .social-media {
+    margin-bottom: 2rem;
+    text-align: center !important;
+  }
+
+  .pad-right {
+    padding-bottom: 1rem;
+  }
+
+  .drink-bag {
+    color: grey !important;
+  }
+
+  .drink-btn {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .drink-row {
+    margin-top: 5px;
+  }
+
+  .drink-price {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fa-mobile,
+  .fa-envelope-o,
+  .fa-map-marker {
+    display: none;
+  }
+
+  .contact-info > div p {
+    text-align: center;
+  }
+
+  .jumbotron {
+    height: 50vh;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+
+  .section-product {
+    padding-top: 20px;
+  }
+
+  .profile {
+    width: 80px;
+  }
+
+  .team-members {
+    font-size: 14px;
+  }
+
+  .copy-right {
+    padding: 1rem 4rem 2rem 1rem !important;
+  }
+
+  .customer-image {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   .credit-card {
     width: 30px;

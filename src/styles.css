@@ -542,7 +542,10 @@ a.nav-link {
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .credit-card {
     width: 30px;
   }
@@ -626,10 +629,6 @@ a.nav-link {
 
   .copy-right {
     padding: 1rem 4rem 2rem 1rem !important;
-  }
-
-  .customer-image {
-    display: none;
   }
 }
 

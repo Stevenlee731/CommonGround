@@ -9,6 +9,10 @@ const $infoButton = document.querySelector('#info-button')
 const $methodButton = document.querySelector('#method-button')
 const $drinkButton = document.querySelector('#drink-button')
 const $completeButton = document.querySelector('#complete-button')
+const $jon = document.querySelector('#jon')
+const $judy = document.querySelector('#judy')
+const $andrew = document.querySelector('#andrew')
+
 var $shoppingCart = {}
 
 const changeView = (activeView, viewList) => {
@@ -22,6 +26,18 @@ const changeView = (activeView, viewList) => {
 
 
 document.addEventListener("DOMContentLoaded", event => {
+
+$jon.addEventListener('click', event => {
+  console.log('jon')
+})
+
+$judy.addEventListener('click', event => {
+  console.log('judy')
+})
+
+$andrew.addEventListener('click', event => {
+  console.log('andrew')
+})
 
 $aboutButton.addEventListener('click', event => {
   changeView('#home', $viewList)
@@ -68,5 +84,41 @@ window.addEventListener('scroll', () => {
     $navbar.classList.remove('fixed-top')
   }
 })
+
+$(document).ready(function(){
+
+  $.ajax({
+    //AJAX call to reddits public api
+    "url": "https://www.reddit.com/r/coffee.json",
+    "method": "GET"
+  })
+  //if successful, return back a JSON Object
+  .done(function(response){
+    //get the array of reddit threads/posts
+    var content = response.data.children;
+
+    //iterate through each reddit post
+    content.forEach(function(thread, index){
+      const $author = document.createElement('p')
+      const $title = document.createElement('a')
+      $title.setAttribute('href', thread.data.url)
+      $title.textContent = thread.data.title
+      $author.textContent = 'by ' + thread.data.author
+      $author.classList.add('details-text')
+
+      $('#tab-reddit').append($title)
+      $('#tab-reddit').append($author)
+      // console.log(thread.data.url);
+      // console.log(thread.data.author);
+    });
+
+  })
+  //if there was an error, you may skip this section
+  .fail(function(e) {
+    console.log("failed", e);
+  })
+
+});
+
 
 })

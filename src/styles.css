@@ -206,6 +206,12 @@ hr {
 }
 
 /* our team */
+
+.modal-img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
 .section-team {
   background: url('./img/pattern.jpg') center;
   padding: 4rem 0;
@@ -220,6 +226,11 @@ hr {
 .profile {
   border-radius: 50%;
   margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.profile:hover {
+  transform: scale(1.1);
 }
 
 .profile-hr {
@@ -233,6 +244,11 @@ hr {
   padding: 4rem 0;
 }
 
+/* commonors */
+.customer-image {
+  width: 100%;
+}
+
 /* get in touch */
 .section-touch {
   background-color: black;
@@ -243,6 +259,21 @@ hr {
 .contact-info {
   padding: 0.5rem 0;
   font-size: 12px;
+}
+
+.contact-form {
+  background-color: black;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.contact-form:focus {
+  outline: none;
 }
 
 a > i {
@@ -326,6 +357,21 @@ a > i {
   margin-left: 0;
 }
 
+.details-text {
+  font-size: 12px;
+}
+
+.pad-right {
+  padding-right: 70px;
+}
+
+#tab-details,
+#tab-reddit {
+  max-height: 400px;
+  overflow: scroll;
+  padding-top: 1rem;
+}
+
 .pricing {
   padding: 4rem 0;
   width: 100%;
@@ -357,10 +403,127 @@ a > i {
   border: 1px solid #d3d3d3;
 }
 
+.credit-card {
+  width: 70%;
+  float: right;
+}
+
 #method {
   margin-bottom: 10rem;
 }
 
 .form-box {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
+}
+
+/* media queries */
+@media only screen and (max-width: 1920px) {
+  .wall-sticker {
+    font-size: 5rem;
+    padding: 13rem 20rem 10rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .friend-grid {
+    height: 800px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+  .friend-grid {
+    height: 600px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .friend-grid {
+    height: 450px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .credit-card {
+    width: 30px;
+  }
+
+  .section-friends {
+    display: none;
+  }
+
+  .section-checkout {
+    padding: 3rem 1rem;
+  }
+
+  .checkout-form {
+    width: 100%;
+  }
+
+  .col-xs-12.text-left {
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .social-media {
+    margin-bottom: 2rem;
+    text-align: center !important;
+  }
+
+  .pad-right {
+    padding-bottom: 1rem;
+  }
+
+  .drink-btn {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .fa-mobile,
+  .fa-envelope-o,
+  .fa-map-marker {
+    display: none;
+  }
+
+  .contact-info > div p {
+    text-align: center;
+  }
+
+  .jumbotron {
+    height: 50vh;
+  }
+
+  #coffeeCarousel {
+    display: none;
+  }
+
+  .section-product {
+    padding-top: 20px;
+  }
+
+  .profile {
+    width: 80px;
+  }
+
+  .team-members {
+    font-size: 14px;
+  }
+
+  .copy-right {
+    padding: 1rem 4rem 2rem 1rem !important;
+  }
+
+  .customer-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
 }

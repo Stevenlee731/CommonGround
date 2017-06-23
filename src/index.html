@@ -10,24 +10,24 @@
 </head>
 <body>
   <nav style="background-color: white;"class="navbar navbar-light navbar-toggleable-sm" id="main-nav">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <a id="home-button" href="#" class="navbar-brand d-flex w-50 mr-auto"><h4><strong>common grounds.</strong></h4></a>
-      <div class="navbar-collapse collapse" id="collapsingNavbar3">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a id="home-button" href="#" class="navbar-brand d-flex w-50 mr-auto"><h4><strong>common grounds.</strong></h4></a>
+    <div class="navbar-collapse collapse" id="collapsingNavbar3">
 
-          <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-              <li class="nav-item">
-                  <a id="about-button" class="nav-link main-nav" href="#">about us</a>
-              </li>
-              <li class="nav-item">
-                  <a id="product-button" class="nav-link main-nav" href="#">product</a>
-              </li>
-              <li class="nav-item">
-                  <a id="checkout-button" class="nav-link main-nav" href="#">checkout</a>
-              </li>
-          </ul>
-      </div>
+      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+        <li class="nav-item">
+          <a id="about-button" class="nav-link main-nav" href="#">about us</a>
+        </li>
+        <li class="nav-item">
+          <a id="product-button" class="nav-link main-nav" href="#">product</a>
+        </li>
+        <li class="nav-item">
+          <a id="checkout-button" class="nav-link main-nav" href="#">checkout</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <div id="home">
@@ -49,10 +49,7 @@
           <h1 class="heading">what we do?</h1>
 
           <div class="row">
-            <div class="col-xs-12 col-md-6 square">
-              <img class="img-fluid" src="./img/coffee-roasters.jpg" alt="coffee roasters"/>
-            </div>
-            <div class="col-xs-12 col-md-6 text-left copy-right">
+            <div class="col-xs-12 col-md-6 flex-md-last text-left copy-right">
               <h5>creative</h5>
               <h2><strong>roasters</strong></h2>
               <hr class="left-hr"/>
@@ -60,6 +57,9 @@
                 Hi omnes lingua, institutis, legibus inter se differunt.</p>
                 <p>Quisque ut dolor gravida, placerat libero vel, euismod. Plura mihi bona sunt, inclinet, amari petere vellent.</p>
                 <a href="#contact"><button type="button" class="btn btn-md round white">learn more</button></a>
+              </div>
+              <div class="col-xs-12 col-md-6 square">
+                <img class="img-fluid" src="./img/coffee-roasters.jpg" alt="coffee roasters"/>
               </div>
             </div>
             <div class="row">
@@ -73,7 +73,7 @@
                   <a href="#contact"><button type="button" class="btn btn-md round white">learn more</button></a>
                 </div>
                 <div class="col-xs-12 col-md-6 square">
-                  <img class="img-fluid" src="./img/coffee-roasters.jpg" alt="coffee roasters"/>
+                  <img class="img-fluid" src="./img/our-roasts.jpg" alt="coffee roasters"/>
                 </div>
               </div>
             </div>
@@ -118,23 +118,23 @@
               <div class="row">
                 <div class="col-sm-8 offset-sm-2">
                   <div class="row">
-                    <div class="col-4 team">
+                    <div id="jon" data-toggle="modal" data-target="#jon-modal" class="col-4 team">
                       <img class="profile" src="./img/32.jpg" alt="jon cusick"/>
-                      <h3><strong>jon cusick</strong></h3>
+                      <h3 class="team-members"><strong>jon cusick</strong></h3>
                       <hr class="profile-hr" />
-                      <p>art director</p>
+                      <p class="team-members">art director</p>
                     </div>
-                    <div class="col-4 team">
+                    <div id="judy" data-toggle="modal" data-target="#judy-modal" class="col-4 team">
                       <img class="profile" src="./img/2.jpg" alt="judy chung"/>
-                      <h3><strong>judy chung</strong></h3>
+                      <h3 class="team-members"><strong>judy chung</strong></h3>
                       <hr class="profile-hr" />
-                      <p>founder</p>
+                      <p class="team-members">founder</p>
                     </div>
-                    <div class="col-4 team">
+                    <div id="andrew" data-toggle="modal" data-target="#andrew-modal" class="col-4 team">
                       <img class="profile" src="./img/88.jpg" alt="andrew kim"/>
-                      <h3><strong>andrew kim</strong></h3>
+                      <h3 class="team-members"><strong>andrew kim</strong></h3>
                       <hr class="profile-hr" />
-                      <p>artist. designer</p>
+                      <p class="team-members">artist. designer</p>
                     </div>
                   </div>
                 </div>
@@ -166,16 +166,16 @@
                 </div>
                 <div style="margin-top:30px;" class="row">
                   <div class="col-sm-3">
-                    <img src="./img/customer1.jpg" alt="">
+                    <img class="customer-image" src="./img/customer1.jpg" alt=""/>
                   </div>
                   <div class="col-sm-3">
-                    <img src="./img/customer2.jpg" alt="">
+                    <img class="customer-image" src="./img/customer2.jpg" alt=""/>
                   </div>
                   <div class="col-sm-3">
-                    <img src="./img/customer3.png" alt="">
+                    <img class="customer-image" src="./img/customer3.png" alt=""/>
                   </div>
                   <div class="col-sm-3">
-                    <img src="./img/customer4.jpg" alt="">
+                    <img class="customer-image" src="./img/customer4.jpg" alt=""/>
                   </div>
                 </div>
               </div>
@@ -189,18 +189,18 @@
                 <div class="row">
                   <div class="col-sm-6 text-left">
                     <div class="row contact-info">
-                      <div class="col-sm-1">
+                      <div class="col-sm-1 col-xs-1">
                         <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
                       </div>
-                      <div class="col-sm-11">
+                      <div class="col-sm-11  col-xs-11">
                         <p>23 Mulholland Drive. suite 721. Los Angeles 10010 100S. Main Street Los Angeles 90012</p>
                       </div>
                     </div>
                     <div class="row contact-info">
-                      <div class="col-sm-1">
+                      <div class="col-sm-1 col-xs-1">
                         <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
                       </div>
-                      <div class="col-sm-11">
+                      <div class="col-sm-11 col-xs-11">
                         <p>+1-670-567-5590</p>
                       </div>
                     </div>
@@ -223,28 +223,19 @@
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <form class="form-horizontal" role="form" method="post" action="index.php">
-                      <div class="form-group">
                         <div class="col-sm-12">
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" value=""/>
+                          <input class="contact-form" type="text" id="name" name="name" placeholder="name" value=""/>
                         </div>
-                      </div>
-                      <div class="form-group">
+
                         <div class="col-sm-12">
-                          <input type="email" class="form-control" id="email" name="email" placeholder="e-mail" value=""/>
+                          <input class="contact-form" type="email" id="email" name="email" placeholder="e-mail" value=""/>
                         </div>
-                      </div>
-                      <div class="form-group">
                         <div class="col-sm-12">
-                          <textarea class="form-control" row="4" name="message" placeholder="your message"></textarea>
+                          <textarea class="contact-form" row="2" name="message" placeholder="your message"></textarea>
                         </div>
-                      </div>
-                      <div class="form-group">
                         <div class="col-sm-8 col-sm-offset-2">
                           <input id="submit" name="submit" type="submit" value="submit" class="btn-md round white submit"/>
                         </div>
-                      </div>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -252,313 +243,420 @@
           </section>
         </div>
 
-<section id="product" class="hide">
-  <div class="section-details">
-    <div class="container">
-      <h1 class="title">Christopher Columbus</h1>
-      <h1 class="bold title"><strong>ROAST</strong></h1>
+        <section id="product" class="hide">
+          <div class="section-details">
+            <div class="container">
+              <h1 class="title">Christopher Columbus</h1>
+              <h1 class="bold title"><strong>ROAST</strong></h1>
 
-      <div id="coffeeCarousel" class="carousel slide" data-ride="carousel">
-        <div class="text-center carousel-controls">
-          <a style="padding-right: 1rem;" href="#coffeeCarousel" role="button" data-slide="prev">prev</a>
-          <a class="right" href="#coffeeCarousel" role="button" data-slide="next">next</a>
-        </div>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
-          </div>
-        </div>
-
-        <ol class="carousel-indicators">
-          <li data-target="#coffeeCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#coffeeCarousel" data-slide-to="1"></li>
-          <li data-target="#coffeeCarousel" data-slide-to="2"></li>
-          <li data-target="#coffeeCarousel" data-slide-to="3"></li>
-          <li data-target="#coffeeCarousel" data-slide-to="4"></li>
-        </ol>
-      </div>
-      <div class="section-product">
-        <div class="row">
-          <div class="col-sm-10 offset-sm-1">
-            <div class="row">
-              <div style="padding-right:70px;" class="col-6 text-left">
-                <hr class="border-left"/>
-                <h2><strong>this roast is<br/>for the go-getters,<br/> the adventurous,<br/> and not the<br/> average joe.</strong></h2>
-              </div>
-              <div class="col-6 text-left">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#tab-details" role="tab" data-toggle="tab">Details</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#tab-reddit" role="tab" data-toggle="tab">Reddit</a>
-                  </li>
-                </ul>
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="tab-details">
-                    <p style="font-size: 12px;">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
-                    <p style="font-size: 12px;">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
-                    <p style="font-size: 12px;">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="tab-reddit">bbb</div>
+              <div id="coffeeCarousel" class="carousel slide" data-ride="carousel">
+                <div class="text-center carousel-controls">
+                  <a style="padding-right: 1rem;" href="#coffeeCarousel" role="button" data-slide="prev">prev</a>
+                  <a class="right" href="#coffeeCarousel" role="button" data-slide="next">next</a>
                 </div>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="First slide"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Second slide"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
+                  </div>
+                </div>
+
+                <ol class="carousel-indicators">
+                  <li data-target="#coffeeCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#coffeeCarousel" data-slide-to="1"></li>
+                  <li data-target="#coffeeCarousel" data-slide-to="2"></li>
+                  <li data-target="#coffeeCarousel" data-slide-to="3"></li>
+                  <li data-target="#coffeeCarousel" data-slide-to="4"></li>
+                </ol>
+              </div>
+              <div class="section-product">
                 <div class="row">
-                  <div style="padding-top: 40px;" class="col-sm-12 social-links">
-                    <a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-                    <a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-                    <a data-toggle="tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
-                    <a data-toggle="tooltip" data-placement="bottom" title="Pinterest" href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+                  <div class="col-sm-10 offset-sm-1">
+                    <div class="row">
+                      <div class="pad-right col-xs-6 col-sm-6 text-left">
+                        <hr class="border-left"/>
+                        <h2><strong>this roast is<br/>for the go-getters,<br/> the adventurous,<br/> and not the<br/> average joe.</strong></h2>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 text-left">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#tab-details" role="tab" data-toggle="tab">Details</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#tab-reddit" role="tab" data-toggle="tab">Reddit</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active" id="tab-details">
+                            <p class="details-text">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
+                            <p class="details-text">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
+                            <p class="details-text">Fictum, deserunt mollit anim laborum astutumque! Excepteur sint obcaecat cupiditat non proident culpa. Cras mattis iudicium purus sit amet fermentum.</p>
+                          </div>
+                          <div role="tabpanel" class="tab-pane fade" id="tab-reddit"></div>
+                        </div>
+                        <div class="row">
+                          <div style="padding-top: 40px;" class="col-sm-12 social-links">
+                            <a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                            <a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            <a data-toggle="tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                            <a data-toggle="tooltip" data-placement="bottom" title="Pinterest" href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pricing">
-    <div class="container">
-      <div class="row">
-        <div style="text-align: center;" class="col-sm-7">
-          <h4 style="margin-top:5px;"><span>best price <span style="padding-left: 20px; padding-right:20px;">&#8212;&#8212;</span><strong>$19 </strong><span style="color: grey;"> / bag</span></span></h4>
-        </div>
-        <div class="col-sm-5">
-          <a href="#"><button id="drink-button" class="white btn-md round price" type="" name="button">drink more</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="checkout">
-  <div id="info" class="section-checkout hide">
-    <div class="container checkout-form">
-      <h1 style="padding-bottom: 2rem;" class="title">CHECK<strong>OUT</strong></h1>
-      <h5>SHIPPING ADDRESS</h5>
-      <div class="row">
-        <div class="col-6 checkout-column">
-          <input type="text" class="form-control checkout-boxes" placeholder="First name"/>
-        </div>
-        <div class="col-6 checkout-column">
-          <input type="text" class="form-control checkout-boxes" placeholder="Last name"/>
-        </div>
-      </div>
-      <div style="margin-top: 10px;" class="row">
-        <div class="col-8 checkout-column">
-          <input type="text" class="form-control checkout-boxes" placeholder="Address"/>
-        </div>
-        <div class="col-4 checkout-column">
-          <input type="text" class="form-control checkout-boxes" placeholder="Apt, suite, etc. [optional]"/>
-        </div>
-      </div>
-      <div style="margin-top: 10px;" class="row">
-        <div class="col-12 checkout-column">
-          <input type="text" class="form-control checkout-boxes" placeholder="City"/>
-        </div>
-      </div>
-      <div style="margin-top: 10px;" class="row">
-        <div class="col-5 checkout-column">
-          <select class="form-control checkout-boxes" name="">
-            <option>United States</option>
-            <option>Canada</option>
-          </select>
-        </div>
-        <div class="col-5 checkout-column">
-          <select class="form-control checkout-boxes" name="State">
-            <option>California</option>
-            <option>Nevada</option>
-            <option>New Mexico</option>
-          </select>
-        </div>
-        <div class="col-2 checkout-column">
-          <input type="text" class="form-control checkout-boxes" placeholder="Zip code"/>
-        </div>
-      </div>
-      <div style="margin-top: 10px;" class="row checkout-boxes">
-        <div class="col-12 checkout-column">
-          <input type="text" class="form-control checkout-boxes" placeholder="Phone"/>
-        </div>
-      </div>
-      <div style="margin-top: 30px;" class="row">
-        <div class="col-xs-12 col-md-12 " style="font-size: 16px">
-          <input type="checkbox" name="name" value="" style="transform: scale(2)"/>
-          <span style="padding-left: 15px;">Save this information for next time</span>
-        </div>
-      </div>
-      <div style="margin-top:35px;" class="row" id="continue">
-        <div class="col-xs-12 col-md-6 text-left" style="font-size: 16px">
-          <a style="color:grey;" href="#">< RETURN TO CART</a>
-        </div>
-        <div class="col-xs-12 col-md-6 text-right" style="font-size: 16px">
-          <a href="#"><input id="info-button" style="color:grey;background-color:white;" type="button" name="name" value="CONTINUE TO SHIPPING METHOD"/></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="method" class="section-checkout hide">
-    <div class="container checkout-form">
-      <h1 style="padding-bottom: 2rem;" class="title">CHECK<strong>OUT</strong></h1>
-      <h5 style="padding-bottom:15px;">SHIPPING METHOD</h5>
-      <div class="custom-controls-stacked">
-        <div class="checkout-border d-flex justify-content-end" style="color:grey;">
-          <div class="mr-auto p-2">
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox1" value="option1"> Standard Free Shipping
-              </label>
+          <div class="pricing">
+            <div class="container">
+              <div class="row">
+                <div style="text-align: center;" class="col-sm-7">
+                  <h4 style="margin-top:5px;"><span>best price <span style="padding-left: 20px; padding-right:20px;">&#8212;&#8212;</span><strong>$19 </strong><span style="color: grey;"> / bag</span></span></h4>
+                </div>
+                <div class="col-sm-5 drink-btn">
+                  <a href="#"><button id="drink-button" class="white btn-md round price" type="" name="button">drink more</button></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="p-2">
-            <p style="padding-right:10px;">Free</p>
-          </div>
-        </div>
-        <div class="checkout-border d-flex justify-content-end" style="color:grey;">
-          <div class="mr-auto p-2 ">
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Priority Shipping (1-3 Days)
-              </label>
+        </section>
+
+        <div id="checkout">
+          <div id="info" class="section-checkout hide">
+            <div class="container checkout-form">
+              <h1 style="padding-bottom: 2rem;" class="title">CHECK<strong>OUT</strong></h1>
+              <h5>SHIPPING ADDRESS</h5>
+              <div class="row">
+                <div class="col-6 checkout-column">
+                  <input type="text" class="form-control checkout-boxes" placeholder="First name"/>
+                </div>
+                <div class="col-6 checkout-column">
+                  <input type="text" class="form-control checkout-boxes" placeholder="Last name"/>
+                </div>
+              </div>
+              <div style="margin-top: 10px;" class="row">
+                <div class="col-8 checkout-column">
+                  <input type="text" class="form-control checkout-boxes" placeholder="Address"/>
+                </div>
+                <div class="col-4 checkout-column">
+                  <input type="text" class="form-control checkout-boxes" placeholder="Apt, suite, etc. [optional]"/>
+                </div>
+              </div>
+              <div style="margin-top: 10px;" class="row">
+                <div class="col-12 checkout-column">
+                  <input type="text" class="form-control checkout-boxes" placeholder="City"/>
+                </div>
+              </div>
+              <div style="margin-top: 10px;" class="row">
+                <div class="col-5 checkout-column">
+                  <select class="form-control checkout-boxes" name="">
+                    <option>United States</option>
+                    <option>Canada</option>
+                  </select>
+                </div>
+                <div class="col-5 checkout-column">
+                  <select class="form-control checkout-boxes" name="State">
+                    <option>California</option>
+                    <option>Nevada</option>
+                    <option>New Mexico</option>
+                  </select>
+                </div>
+                <div class="col-2 checkout-column">
+                  <input type="text" class="form-control checkout-boxes" placeholder="Zip code"/>
+                </div>
+              </div>
+              <div style="margin-top: 10px;" class="row checkout-boxes">
+                <div class="col-12 checkout-column">
+                  <input type="text" class="form-control checkout-boxes" placeholder="Phone"/>
+                </div>
+              </div>
+              <div style="margin-top: 30px;" class="row">
+                <div class="col-xs-12 col-md-12 " style="font-size: 16px">
+                  <input type="checkbox" name="name" value="" style="transform: scale(2)"/>
+                  <span style="padding-left: 15px;">Save this information for next time</span>
+                </div>
+              </div>
+              <div style="margin-top:35px;" class="row" id="continue">
+                <div class="col-xs-12 col-md-6 text-left" style="font-size: 16px">
+                  <a style="color:grey;" href="#">< RETURN TO CART</a>
+                </div>
+                <div class="col-xs-12 col-md-6 text-right" style="font-size: 16px">
+                  <a href="#"><input id="info-button" style="color:grey;background-color:white;" type="button" name="name" value="CONTINUE TO SHIPPING METHOD"/></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="p-2">
-            <p style="padding-right:10px;">$10.00</p>
-          </div>
-        </div>
-      </div>
-      <div style="margin-top:35px;" class="row">
-        <div class="col-xs-12 col-md-6 text-left" style="font-size: 16px">
-          <a style="color:grey;" href="#">< RETURN TO CUSTOMER INFORMATION</a>
-        </div>
-        <div class="col-xs-12 col-md-6 text-right" style="font-size: 16px">
-          <a href="#"><input id="method-button" style="color:grey;background-color:white;" type="button" name="name" value="CONTINUE TO PAYMENT METHOD"/></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="payment" class="section-checkout hide">
-    <div class="container checkout-form">
-      <h1 style="padding-bottom: 2rem;" class="title">CHECK<strong>OUT</strong></h1>
-      <h5 style="padding-bottom:15px;">PAYMENT METHOD</h5>
-      <p>All transactions are secure and encrypted. Credit card information is never stored</p>
-      <div style="padding:5px;width:100%;" class="d-flex justify-content-end align-content-center flex-wrap checkout-border">
-        <div class="mr-auto p-2">
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Credit Card
-            </label>
-          </div>
-        </div>
-        <div class="p-2"><img style="width:80%;" src="./img/visa.png" alt=""></div>
-        <div class="p-2"><img style="width:80%;" src="./img/mastercard.png" alt=""></div>
-        <div class="p-2"><img style="width:80%;" src="./img/americanexpress.png" alt=""></div>
-        <div class="p-2"><img style="width:80%;" src="./img/discover.png" alt=""></div>
-        <div class="p-2">... and more</div>
-      </div>
-      <div class="d-flex align-content-around flex-wrap checkout-border">
-        <div class="form-box" style="padding:30px;width:100%;">
-          <div class="row">
-            <div style="padding-left:5px;padding-right:5px;" class="col-sm-12">
-              <input style="width:100%;padding:10px;" type="text" name="name" placeholder="Card Number">
+          <div id="method" class="section-checkout hide">
+            <div class="container checkout-form">
+              <h1 style="padding-bottom: 2rem;" class="title">CHECK<strong>OUT</strong></h1>
+              <h5 style="padding-bottom:15px;">SHIPPING METHOD</h5>
+              <div class="custom-controls-stacked">
+                <div class="checkout-border d-flex justify-content-end" style="color:grey;">
+                  <div class="mr-auto p-2">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox1" value="option1"> Standard Free Shipping
+                      </label>
+                    </div>
+                  </div>
+                  <div class="p-2">
+                    <p style="padding-right:10px;">Free</p>
+                  </div>
+                </div>
+                <div class="checkout-border d-flex justify-content-end" style="color:grey;">
+                  <div class="mr-auto p-2 ">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Priority Shipping (1-3 Days)
+                      </label>
+                    </div>
+                  </div>
+                  <div class="p-2">
+                    <p style="padding-right:10px;">$10.00</p>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top:35px;" class="row">
+                <div class="col-xs-12 col-md-6 text-left" style="font-size: 16px">
+                  <a style="color:grey;" href="#">< RETURN TO CUSTOMER INFORMATION</a>
+                </div>
+                <div class="col-xs-12 col-md-6 text-right" style="font-size: 16px">
+                  <a href="#"><input id="method-button" style="color:grey;background-color:white;" type="button" name="name" value="CONTINUE TO PAYMENT METHOD"/></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div style="padding-top: 15px;" class="row">
-            <div style="padding-left:5px;padding-right:5px;" class="col-sm-6">
-              <input style="width:100%;padding:10px;" type="text" name="name" placeholder="Name on card">
+          <div id="payment" class="section-checkout hide">
+            <div class="container checkout-form">
+              <h1 style="padding-bottom: 2rem;" class="title">CHECK<strong>OUT</strong></h1>
+              <h5 style="padding-bottom:15px;">PAYMENT METHOD</h5>
+              <p>All transactions are secure and encrypted. Credit card information is never stored</p>
+              <div style="padding:5px;width:100%;" class="d-flex justify-content-end align-content-center flex-wrap checkout-border">
+                <div class="mr-auto p-2">
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Credit Card
+                    </label>
+                  </div>
+                </div>
+                <div class="p-2"><img class="credit-card" src="./img/visa.png" alt=""/></div>
+                <div class="p-2"><img class="credit-card" src="./img/mastercard.png" alt=""/></div>
+                <div class="p-2"><img class="credit-card" src="./img/americanexpress.png" alt=""/></div>
+                <div class="p-2"><img class="credit-card" src="./img/discover.png" alt=""/></div>
+                <div class="p-2">... and more</div>
+              </div>
+              <div class="d-flex align-content-around flex-wrap checkout-border">
+                <div class="form-box" style="padding:30px;width:100%;">
+                  <div class="row">
+                    <div style="padding-left:5px;padding-right:5px;" class="col-sm-12">
+                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="Card Number">
+                    </div>
+                  </div>
+                  <div style="padding-top: 15px;" class="row">
+                    <div style="padding-left:5px;padding-right:5px;" class="col-sm-6">
+                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="Name on card">
+                    </div>
+                    <div style="padding-left:5px;padding-right:5px;" class="col-sm-3">
+                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="MM/YY">
+                    </div>
+                    <div style="padding-left:5px;padding-right:5px;" class="col-sm-3">
+                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="CVV">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="padding:5px;width:100%;" class="d-flex justify-content-end checkout-border">
+                <div class="mr-auto p-2">
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"><img img class="credit-card" src="./img/paypal.png" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="p-2"><img img class="credit-card" src="./img/visa.png" alt=""/></div>
+                <div class="p-2"><img img class="credit-card" src="./img/mastercard.png" alt=""/></div>
+                <div class="p-2"><img img class="credit-card" src="./img/americanexpress.png" alt=""/></div>
+                <div class="p-2"><img img class="credit-card" src="./img/discover.png" alt=""/></div>
+              </div>
+
+              <h5 style="margin-top: 5rem;adding-bottom:15px;">BILLING ADDRESS</h5>
+              <div class="custom-controls-stacked">
+                <div class="checkout-border d-flex justify-content-end" style="color:grey;">
+                  <div class="mr-auto p-2">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox1" value="option1"> Standard Free Shipping
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout-border d-flex justify-content-end" style="color:grey;">
+                  <div class="mr-auto p-2 ">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Priority Shipping (1-3 Days)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px;" class="row">
+                <div class="col-xs-12 col-md-12 " style="font-size: 16px">
+                  <input type="checkbox" name="name" value="" style="transform: scale(1)"/>
+                  <span style="padding-left: 15px;">Subscribe to our newsletter</span>
+                </div>
+              </div>
+
+              <div style="margin-top:35px;" class="row">
+                <div class="col-xs-12 col-md-6 text-left" style="font-size: 16px">
+                  <a style="color:grey;" href="#">< RETURN TO SHIPPING METHOD</a>
+                </div>
+                <div class="col-xs-12 col-md-6 text-right" style="font-size: 16px">
+                  <a href="#"><input id="complete-button" style="padding-left:20px;padding-right:20px;color:grey;background-color:white;" type="button" name="name" value="COMPLETE ORDER"/></a>
+                </div>
+              </div>
             </div>
-            <div style="padding-left:5px;padding-right:5px;" class="col-sm-3">
-              <input style="width:100%;padding:10px;" type="text" name="name" placeholder="MM/YY">
-            </div>
-            <div style="padding-left:5px;padding-right:5px;" class="col-sm-3">
-              <input style="width:100%;padding:10px;" type="text" name="name" placeholder="CVV">
+          </div>
+
+          <div id="confirmation" class="section-checkout hide">
+            <div class="container checkout-form">
+              <h1 style="padding-bottom: 50vh;" class="title">THANK<strong>YOU</strong></h1>
             </div>
           </div>
         </div>
-      </div>
-      <div style="padding:5px;width:100%;" class="d-flex justify-content-end checkout-border">
-        <div class="mr-auto p-2">
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Paypal
-            </label>
-          </div>
-        </div>
-        <div class="p-2"><img style="width:80%;" src="./img/visa.png" alt=""></div>
-        <div class="p-2"><img style="width:80%;" src="./img/mastercard.png" alt=""></div>
-        <div class="p-2"><img style="width:80%;" src="./img/americanexpress.png" alt=""></div>
-        <div class="p-2"><img style="width:80%;" src="./img/discover.png" alt=""></div>
-      </div>
 
-      <h5 style="margin-top: 5rem;adding-bottom:15px;">BILLING ADDRESS</h5>
-      <div class="custom-controls-stacked">
-        <div class="checkout-border d-flex justify-content-end" style="color:grey;">
-          <div class="mr-auto p-2">
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox1" value="option1"> Standard Free Shipping
-              </label>
+        <footer class="footer text-center">
+          <h6>&copy;<strong>2016 commongrounds.</strong></h6>
+          <p>all rights reserved</p>
+        </footer>
+
+        <div class="modal fade" id="judy-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" >Judy Chung | founder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="row testimonial">
+                        <div class="col-sm-4">
+                          <img class="modal-img" src="./img/judy2.jpg"/>
+                        </div>
+                        <div class="col-sm-8">
+                          <blockquote>
+                            <i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.
+                            <hr class="testimonials-hr"/>
+                            <cite>&#8212; Aristotle</cite>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="checkout-border d-flex justify-content-end" style="color:grey;">
-          <div class="mr-auto p-2 ">
-            <div class="form-check form-check-inline">
-              <label class="form-check-label">
-                <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Priority Shipping (1-3 Days)
-              </label>
+
+        <div class="modal fade" id="andrew-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" >Andrew Kim | artist. designer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="row testimonial">
+                        <div class="col-sm-4">
+                          <img class="modal-img" src="./img/andrew2.jpg"/>
+                        </div>
+                        <div class="col-sm-8">
+                          <blockquote>
+                            <i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.
+                            <hr class="testimonials-hr"/>
+                            <cite>&#8212; Plato</cite>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div style="margin-top: 30px;" class="row">
-        <div class="col-xs-12 col-md-12 " style="font-size: 16px">
-          <input type="checkbox" name="name" value="" style="transform: scale(1)"/>
-          <span style="padding-left: 15px;">Subscribe to our newsletter</span>
+        <div class="modal fade" id="jon-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" >Jon Cusick | art director</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="row testimonial">
+                        <div class="col-sm-4">
+                          <img class="modal-img" src="./img/jon2.jpg"/>
+                        </div>
+                        <div class="col-sm-8">
+                          <blockquote>
+                            <i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.
+                            <hr class="testimonials-hr"/>
+                            <cite>&#8212; Socrates</cite>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div style="margin-top:35px;" class="row">
-        <div class="col-xs-12 col-md-6 text-left" style="font-size: 16px">
-          <a style="color:grey;" href="#">< RETURN TO SHIPPING METHOD</a>
-        </div>
-        <div class="col-xs-12 col-md-6 text-right" style="font-size: 16px">
-          <a href="#"><input id="complete-button" style="padding-left:20px;padding-right:20px;color:grey;background-color:white;" type="button" name="name" value="COMPLETE ORDER"/></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="confirmation" class="section-checkout hide">
-    <div class="container checkout-form">
-      <h1 style="padding-bottom: 50vh;" class="title">THANK<strong>YOU</strong></h1>
-    </div>
-  </div>
-</div>
 
 
-
-    <footer class="footer text-center">
-      <h6>&copy;<strong>2016 commongrounds.</strong></h6>
-      <p>all rights reserved</p>
-    </footer>
-
-
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-</body>
-</html>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+      </body>
+      </html>

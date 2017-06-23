@@ -9,7 +9,7 @@
   <title>Common Grounds</title>
 </head>
 <body>
-  <nav style="background-color: white;"class="navbar navbar-light navbar-toggleable-sm" id="main-nav">
+  <nav style="background-color: white;" class="navbar navbar-light navbar-toggleable-sm" id="main-nav">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -224,7 +224,7 @@
                   </div>
                   <div class="col-sm-6">
                         <div class="col-sm-12">
-                          <input class="contact-form" type="text" id="name" name="name" placeholder="name" value=""/>
+                          <input class="contact-form" type="text" id="name" name="name" placeholder="name" value="" />
                         </div>
 
                         <div class="col-sm-12">
@@ -259,16 +259,16 @@
                     <img class="d-block img-fluid" src="./img/car-1.jpg" alt="First slide"/>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Second slide"/>
+                    <img class="d-block img-fluid" src="./img/car-2.jpg" alt="Second slide"/>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide"/>
+                    <img class="d-block img-fluid" src="./img/car-3.jpg" alt="Third slide"/>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide"/>
+                    <img class="d-block img-fluid" src="./img/car-4.jpg" alt="Third slide"/>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block img-fluid" src="./img/car-1.jpg" alt="Third slide">
+                    <img class="d-block img-fluid" src="./img/car-5.jpg" alt="Third slide">
                   </div>
                 </div>
 
@@ -294,7 +294,7 @@
                             <a class="nav-link active" href="#tab-details" role="tab" data-toggle="tab">Details</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#tab-reddit" role="tab" data-toggle="tab">Reddit</a>
+                            <a class="nav-link details-tab" href="#tab-reddit" role="tab" data-toggle="tab">Reddit</a>
                           </li>
                         </ul>
                         <div class="tab-content">
@@ -306,7 +306,7 @@
                           <div role="tabpanel" class="tab-pane fade" id="tab-reddit"></div>
                         </div>
                         <div class="row">
-                          <div style="padding-top: 40px;" class="col-sm-12 social-links">
+                          <div class="col-sm-12 social-links">
                             <a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
                             <a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
                             <a data-toggle="tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
@@ -323,8 +323,8 @@
           <div class="pricing">
             <div class="container">
               <div class="row">
-                <div style="text-align: center;" class="col-sm-7">
-                  <h4 style="margin-top:5px;"><span>best price <span style="padding-left: 20px; padding-right:20px;">&#8212;&#8212;</span><strong>$19 </strong><span style="color: grey;"> / bag</span></span></h4>
+                <div class="title col-sm-7">
+                  <h4 class="drink-row"><span>best price <span class="drink-price">&#8212;&#8212;</span><strong>$19 </strong><span class="drink-bag"> / bag</span></span></h4>
                 </div>
                 <div class="col-sm-5 drink-btn">
                   <a href="#"><button id="drink-button" class="white btn-md round price" type="" name="button">drink more</button></a>
@@ -341,28 +341,28 @@
               <h5>SHIPPING ADDRESS</h5>
               <div class="row">
                 <div class="col-6 checkout-column">
-                  <input type="text" class="form-control checkout-boxes" placeholder="First name"/>
+                  <input type="text" class="form-control checkout-boxes" placeholder="First name" required/>
                 </div>
                 <div class="col-6 checkout-column">
-                  <input type="text" class="form-control checkout-boxes" placeholder="Last name"/>
+                  <input type="text" class="form-control checkout-boxes" placeholder="Last name" required/>
                 </div>
               </div>
-              <div style="margin-top: 10px;" class="row">
+              <div class="shipping-form row">
                 <div class="col-8 checkout-column">
-                  <input type="text" class="form-control checkout-boxes" placeholder="Address"/>
+                  <input type="text" class="form-control checkout-boxes" placeholder="Address" required/>
                 </div>
                 <div class="col-4 checkout-column">
-                  <input type="text" class="form-control checkout-boxes" placeholder="Apt, suite, etc. [optional]"/>
+                  <input type="text" class="form-control checkout-boxes" placeholder="Apt, suite, etc. [optional]" required/>
                 </div>
               </div>
-              <div style="margin-top: 10px;" class="row">
+              <div class="shipping-form row">
                 <div class="col-12 checkout-column">
-                  <input type="text" class="form-control checkout-boxes" placeholder="City"/>
+                  <input type="text" class="form-control checkout-boxes" placeholder="City" required/>
                 </div>
               </div>
-              <div style="margin-top: 10px;" class="row">
+              <div class="shipping-form row">
                 <div class="col-5 checkout-column">
-                  <select class="form-control checkout-boxes" name="">
+                  <select class="form-control checkout-boxes" name=""  required>
                     <option>United States</option>
                     <option>Canada</option>
                   </select>
@@ -375,12 +375,12 @@
                   </select>
                 </div>
                 <div class="col-2 checkout-column">
-                  <input type="text" class="form-control checkout-boxes" placeholder="Zip code"/>
+                  <input type="text" class="form-control checkout-boxes" placeholder="Zip code" required/>
                 </div>
               </div>
-              <div style="margin-top: 10px;" class="row checkout-boxes">
+              <div class="shipping-form row checkout-boxes">
                 <div class="col-12 checkout-column">
-                  <input type="text" class="form-control checkout-boxes" placeholder="Phone"/>
+                  <input type="text" class="form-control checkout-boxes" placeholder="Phone"  required/>
                 </div>
               </div>
               <div style="margin-top: 30px;" class="row">
@@ -416,7 +416,7 @@
                     <p style="padding-right:10px;">Free</p>
                   </div>
                 </div>
-                <div class="checkout-border d-flex justify-content-end" style="color:grey;">
+                <div class="checkout-border d-flex justify-content-end drink-bag">
                   <div class="mr-auto p-2 ">
                     <div class="form-check form-check-inline">
                       <label class="form-check-label">
@@ -448,7 +448,7 @@
                 <div class="mr-auto p-2">
                   <div class="form-check form-check-inline">
                     <label class="form-check-label">
-                      <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Credit Card
+                      <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox6" value="option1"> Credit Card
                     </label>
                   </div>
                 </div>
@@ -456,24 +456,24 @@
                 <div class="p-2"><img class="credit-card" src="./img/mastercard.png" alt=""/></div>
                 <div class="p-2"><img class="credit-card" src="./img/americanexpress.png" alt=""/></div>
                 <div class="p-2"><img class="credit-card" src="./img/discover.png" alt=""/></div>
-                <div class="p-2">... and more</div>
+                <div class="p-2" >... and more</div>
               </div>
               <div class="d-flex align-content-around flex-wrap checkout-border">
                 <div class="form-box" style="padding:30px;width:100%;">
                   <div class="row">
                     <div style="padding-left:5px;padding-right:5px;" class="col-sm-12">
-                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="Card Number">
+                      <input class="credit-form" type="text" name="name" placeholder="Card Number" required/>
                     </div>
                   </div>
                   <div style="padding-top: 15px;" class="row">
-                    <div style="padding-left:5px;padding-right:5px;" class="col-sm-6">
-                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="Name on card">
+                    <div class="credit-column col-sm-6">
+                      <input class="credit-form" type="text" name="name" placeholder="Name on card" required/>
                     </div>
-                    <div style="padding-left:5px;padding-right:5px;" class="col-sm-3">
-                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="MM/YY">
+                    <div class="credit-column col-sm-3">
+                      <input class="credit-form" type="text" name="name" placeholder="MM/YY" required/>
                     </div>
-                    <div style="padding-left:5px;padding-right:5px;" class="col-sm-3">
-                      <input style="width:100%;padding:10px;" type="text" name="name" placeholder="CVV">
+                    <div class="credit-column col-sm-3">
+                      <input class="credit-form" type="text" name="name" placeholder="CVV"  required/>
                     </div>
                   </div>
                 </div>
@@ -482,7 +482,7 @@
                 <div class="mr-auto p-2">
                   <div class="form-check form-check-inline">
                     <label class="form-check-label">
-                      <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"><img img class="credit-card" src="./img/paypal.png" alt="">
+                      <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox3" value="option1"><img img class="credit-card" src="./img/paypal.png" alt="" />
                     </label>
                   </div>
                 </div>
@@ -494,20 +494,20 @@
 
               <h5 style="margin-top: 5rem;adding-bottom:15px;">BILLING ADDRESS</h5>
               <div class="custom-controls-stacked">
-                <div class="checkout-border d-flex justify-content-end" style="color:grey;">
+                <div class="checkout-border d-flex justify-content-end drink-bag">
                   <div class="mr-auto p-2">
                     <div class="form-check form-check-inline">
                       <label class="form-check-label">
-                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox1" value="option1"> Standard Free Shipping
+                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox4" value="option1"/> Standard Free Shipping
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="checkout-border d-flex justify-content-end" style="color:grey;">
+                <div class="checkout-border d-flex justify-content-end drink-bag">
                   <div class="mr-auto p-2 ">
                     <div class="form-check form-check-inline">
                       <label class="form-check-label">
-                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox2" value="option1"> Priority Shipping (1-3 Days)
+                        <input style="margin-right:10px;" class="form-check-input" type="radio" id="inlineCheckbox5" value="option1"/> Priority Shipping (1-3 Days)
                       </label>
                     </div>
                   </div>
@@ -526,7 +526,7 @@
                   <a style="color:grey;" href="#">< RETURN TO SHIPPING METHOD</a>
                 </div>
                 <div class="col-xs-12 col-md-6 text-right" style="font-size: 16px">
-                  <a href="#"><input id="complete-button" style="padding-left:20px;padding-right:20px;color:grey;background-color:white;" type="button" name="name" value="COMPLETE ORDER"/></a>
+                  <a href="#"><input id="complete-button" class="complete" type="button" name="name" value="COMPLETE ORDER"/></a>
                 </div>
               </div>
             </div>

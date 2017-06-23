@@ -5,6 +5,10 @@ body {
   font-size: 16px;
 }
 
+input:invalid {
+  border: 1px solid red;
+}
+
 .hide {
   display: none;
 }
@@ -47,22 +51,26 @@ body {
 }
 
 .carousel-indicators {
-  position: absolute;
-  color: black;
+  position: relative;
+  top: 20px;
   z-index: 100;
 }
 
 .carousel-indicators li {
   display: inline-block;
-  width: 10px;
-  height: 30px;
+  max-width: 10px;
+  height: 10px;
   margin: 5px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
+  border: 1px solid black;
   border-radius: 50%;
+}
+
+.carousel-indicators li.active {
+  background-color: black !important;
 }
 
 /* Navigation */
@@ -289,6 +297,10 @@ a > i {
   transition: 0.5s;
 }
 
+.social-links {
+  padding-top: 40px;
+}
+
 .social-media a:link,
 .social-media a:visited {
   text-decoration: none;
@@ -365,7 +377,19 @@ a > i {
   padding-right: 70px;
 }
 
-#tab-details,
+.details-tab,
+.details-tab:visited {
+  color: #d6d6d6 !important;
+}
+
+a.nav-link {
+  color: grey;
+}
+
+#tab-details {
+  padding-top: 1rem;
+}
+
 #tab-reddit {
   max-height: 400px;
   overflow: scroll;
@@ -386,6 +410,10 @@ a > i {
   border-top: 1px solid lightgrey;
 }
 
+.shipping-form {
+  margin-top: 10px;
+}
+
 .checkout-form {
   width: 70%;
 }
@@ -397,6 +425,23 @@ a > i {
 
 .checkout-boxes {
   height: 50px !important;
+}
+
+.credit-column {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.complete {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: grey;
+  background-color: white;
+}
+
+.credit-form {
+  width: 100%;
+  padding: 10px;
 }
 
 .checkout-border {
@@ -418,35 +463,86 @@ a > i {
 
 /* media queries */
 @media only screen and (max-width: 1920px) {
-  .wall-sticker {
-    font-size: 5rem;
-    padding: 13rem 20rem 10rem 3rem;
+  .credit-card {
+    width: 33px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .friend-grid {
-    height: 800px !important;
+    height: 950px !important;
+  }
+
+  .credit-card {
+    width: 33px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-
+  .credit-card {
+    width: 33px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .friend-grid {
-    height: 600px !important;
+    height: 800px !important;
+  }
+
+  .credit-card {
+    width: 33px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .checkout-form {
+    width: 100%;
+  }
+
   .friend-grid {
-    height: 450px !important;
+    height: 600px !important;
+  }
+
+  .profile {
+    width: 80px;
+  }
+
+  .team-members {
+    font-size: 12px;
+  }
+
+  .carousel-item {
+    height: 400px;
+  }
+
+  .section-product {
+    padding: 3rem 1rem;
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 758px) {
+  .friend-grid {
+    height: 450px !important;
+  }
+
+  .profile {
+    width: 80px;
+  }
+
+  .team-members {
+    font-size: 12px;
+  }
+
+  .carousel-item {
+    height: 400px;
+  }
+
+  .section-product {
+    padding: 3rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
   .credit-card {
     width: 30px;
   }
@@ -480,9 +576,22 @@ a > i {
     padding-bottom: 1rem;
   }
 
+  .drink-bag {
+    color: grey !important;
+  }
+
   .drink-btn {
     margin-top: 2rem;
     text-align: center;
+  }
+
+  .drink-row {
+    margin-top: 5px;
+  }
+
+  .drink-price {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .fa-mobile,
@@ -499,8 +608,8 @@ a > i {
     height: 50vh;
   }
 
-  #coffeeCarousel {
-    display: none;
+  .carousel-item {
+    height: 300px;
   }
 
   .section-product {
@@ -522,8 +631,4 @@ a > i {
   .customer-image {
     display: none;
   }
-}
-
-@media only screen and (max-width: 480px) {
-
 }

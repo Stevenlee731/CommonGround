@@ -632,3 +632,291 @@ a.nav-link {
     display: none;
   }
 }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  #home-button h4 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .section-details {
+    padding: 2rem;
+  }
+
+  .section-mission {
+    padding: 1rem 2rem;
+  }
+
+  #cover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .motto {
+    font-size: 16px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .credit-card {
+    width: 25px;
+  }
+
+  .section-friends {
+    display: none;
+  }
+
+  .section-checkout {
+    padding: 3rem 1rem;
+  }
+
+  .checkout-form {
+    width: 100%;
+  }
+
+  div > .p-2 {
+    font-size: 10px;
+  }
+
+  .jumbotron {
+    height: 85vh !important;
+  }
+
+  .col-xs-12.text-left {
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .social-media {
+    margin-bottom: 2rem;
+    text-align: center !important;
+  }
+
+  .pad-right {
+    padding-bottom: 1rem;
+  }
+
+  .drink-bag {
+    color: grey !important;
+  }
+
+  .drink-btn {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .drink-row {
+    margin-top: 5px;
+  }
+
+  .drink-price {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fa-mobile,
+  .fa-envelope-o,
+  .fa-map-marker {
+    display: none;
+  }
+
+  .contact-info > div p {
+    text-align: center;
+  }
+
+  .jumbotron {
+    height: 50vh;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .fa-2x {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item {
+    height: 130px;
+  }
+
+  .section-product {
+    padding-top: 20px;
+  }
+
+  .profile {
+    width: 50px;
+  }
+
+  .team-members {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .col-sm-8.col-sm-offset-2 {
+    text-align: center;
+  }
+
+  .copy-right {
+    padding: 1rem 4rem 2rem 1rem !important;
+  }
+
+  .customer-image {
+    display: none;
+  }
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  #home-button h4 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .section-mission {
+    padding: 1rem 2rem;
+  }
+
+  #cover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .motto {
+    font-size: 16px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .credit-card {
+    width: 25px;
+  }
+
+  .section-friends {
+    display: none;
+  }
+
+  .section-checkout {
+    padding: 3rem 1rem;
+  }
+
+  .checkout-form {
+    width: 100%;
+  }
+
+  div > .p-2 {
+    font-size: 10px;
+  }
+
+  .jumbotron {
+    height: 85vh !important;
+  }
+
+  .col-xs-12.text-left {
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .social-media {
+    margin-bottom: 2rem;
+    text-align: center !important;
+  }
+
+  .pad-right {
+    padding-bottom: 1rem;
+  }
+
+  .drink-bag {
+    color: grey !important;
+  }
+
+  .drink-btn {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .drink-row {
+    margin-top: 5px;
+  }
+
+  .drink-price {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fa-mobile,
+  .fa-envelope-o,
+  .fa-map-marker {
+    display: none;
+  }
+
+  .contact-info > div p {
+    text-align: center;
+  }
+
+  .jumbotron {
+    height: 50vh;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .fa-2x {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item {
+    height: 150px;
+  }
+
+  .section-product {
+    padding-top: 20px;
+  }
+
+  .profile {
+    width: 50px;
+  }
+
+  .team-members {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .col-sm-8.col-sm-offset-2 {
+    text-align: center;
+  }
+
+  .copy-right {
+    padding: 1rem 4rem 2rem 1rem !important;
+  }
+
+  .customer-image {
+    display: none;
+  }
+}
